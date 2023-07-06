@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #455d7a;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    background-color: #233142;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul{
+    color:darkgrey ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+    gap: 40px;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
