@@ -10,6 +10,7 @@ body{
 
 h1{
     text-align: center;
+    color: #ff894c;
 }
 
 header{
@@ -28,4 +29,38 @@ nav ul{
 a{
     color: whitesmoke;
     text-decoration: none;
+}
+
+
+
+
+/* ===================MAIN======================== */
+.imagem{
+   display: flex;
+}
+
+.band{
+    max-width: 500px;
+    max-height: 250px;
+    
+}
+
+.ini{
+    font-size: 1.3rem;
+    color: rgb(179, 179, 179);
+}
+
+
+
+
+/* =====================FOOTER===================== */
+footer{
+    background-color: #233142;
+    padding-bottom: 55px;  
+}
+
+.nomes{
+    color: rgb(173, 169, 169);
+    padding-top: 90px;
+    font-size: 1.2rem;
 }

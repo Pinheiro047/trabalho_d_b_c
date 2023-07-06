@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Escravidão no Rio Grande do Sul - Gênero</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Escravidão no Rio Grande do Sul</h1>
+  <h2>Gênero</h2>
+  <canvas id="genderChart"></canvas>
+
+  <script>
+    // Dados para o gráfico de gênero
+    var genderData = {
+      labels: ["Homens", "Mulheres"],
+      datasets: [{
+        data: [64, 7],
+        backgroundColor: ["rgba(255, 99, 132, 0.6)", "rgba(54, 162, 235, 0.6)"],
+        borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)"],
+        borderWidth: 1
+      }]
+    };
+
+    var genderOptions = {
+      plugins: {
+        legend: {
+          position: 'bottom'
+        }
+      }
+    };
+
+    // Inicializa o gráfico de gênero
+    var genderChart = new Chart(document.getElementById('genderChart'), {
+      type: 'pie',
+      data: genderData,
+      options: genderOptions
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Escravidão no Rio Grande do Sul - Faixa Etária</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Escravidão no Rio Grande do Sul</h1>
+  <h2>Faixa Etária</h2>
+  <canvas id="ageChart"></canvas>
+
+  <script>
+    // Dados para o gráfico de faixa etária
+    var ageData = {
+      labels: ["18-24 anos", "25-29 anos", "30-34 anos", "35-39 anos", "40-44 anos", "45-49 anos", "50-54 anos", "60+ anos"],
+      datasets: [{
+        data: [22, 9, 14, 7, 2, 3, 7, 6],
+        backgroundColor: ["rgba(255, 99, 132, 0.6)", "rgba(54, 162, 235, 0.6)", "rgba(255, 206, 86, 0.6)", "rgba(75, 192, 192, 0.6)", "rgba(153, 102, 255, 0.6)", "rgba(255, 159, 64, 0.6)", "rgba(255, 99, 255, 0.6)", "rgba(54, 162, 235, 0.6)"],
+        borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 1)", "rgba(255, 99, 255, 1)", "rgba(54, 162, 235, 1)"],
+        borderWidth: 1
+      }]
+    };
+
+    var ageOptions = {
+      plugins: {
+        legend: {
+          position: 'bottom'
+        }
+      }
+    };
+
+    // Inicializa o gráfico de faixa etária
+    var ageChart = new Chart(document.getElementById('ageChart'), {
+      type: 'bar',
+      data: ageData,
+      options: ageOptions
+    });
+  </script>
+</body>
+</html>
